@@ -1,0 +1,183 @@
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,0 , 0,0.6);
+}
+
+#opacity{
+background-color:yellow ;
+opacity: 0;
+} */
+
+/* section{
+    margin-top: 100px;
+}
+div{
+    width: 200px;
+    height: 50px;
+    text-align:center ;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin: 10px;
+}
+div:nth-of-type(2n){
+    background-color: brown;
+}
+div:nth-of-type(3n){
+    background-color: blanchedalmond;
+}
+
+#one{
+    transform: rotate(45deg);
+}
+#two{
+    transform: scale(0.5);
+}
+#three{
+    transform: translatex(100px);
+}
+#four{
+    transform: skew(30deg);
+}
+#five{
+    transform: rotate(30deg) translateX(100px) skew(30deg);
+    box-shadow: 2px 2px 10px black;
+} */
+
+/* div{
+    width: 400px;
+    height: 200px;
+    color: whit;
+    background-color: aquamarine;
+    margin:10px auto;
+    background-image: url(abc.jpg);
+    background-size: cover;
+} */
+ 
+
+/* .card{
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    display: inline-block;
+    margin:10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px black;
+    transition: 1s;
+}
+.desc{
+    padding: 0 2px 0 2px;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card:hover{
+    box-shadow: 0 8px 16px black;
+}
+#woman img{
+    background-size: cover;
+} */
+/* 
+.card {
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px black;
+    transition: 1s;
+    vertical-align: top;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;          
+   
+    border-radius: 5px 5px 0 0;
+}
+
+.desc {
+    padding: 0 5px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px black;
+} */
+
+
+
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border:3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+#relative{
+    background-color: aqua;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#absolute{
+    background-color: rgb(211, 165, 27);
+    position: absolute;
+     top: 20px;
+    left: 20px;
+}
+#Fixed{
+    background-color: rgb(186, 18, 18);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+} */
+ /* div{
+    background-color: white;
+    height: 400px;
+    width: 400px;
+   
+ }
+ #circle{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    
+    border-radius: 50%;
+  
+ }
+ .mouth{
+    width: 200px;
+    height: 80px;
+    background-color: brown;
+    border-bottom-left-radius:50px ;
+     border-bottom-right-radius:50px  ;
+     position: absolute;
+     top: 240px;
+     left: 100px;
+ }
+
+ .lefteye,.righteye{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+ }
+ .righteye{
+    left: 250px;
+ } */

@@ -1,0 +1,29 @@
+        /* p{
+            color:rgb(57, 23, 208);
+        }
+        h1{
+            background-color: aqua;
+        }
+        button{
+            background-color: grey;
+            color: #ffff;
+        } */
+       
+
+        h2{
+            color:orange;
+            text-align:center;
+            text-decoration:red underline;
+            font-family:fantasy;
+        }
+        button{
+            background-color: #00ff00;
+             color:white;
+        }
+   p{
+    background:black;
+    color:white;
+    /* font-weight:bold; */
+     font-family:fantasy;
+    
+   }
