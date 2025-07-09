@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+i{
+    color: rgb(221, 109, 18);
+}
+span{
+    color: rgb(221, 109, 18);
+}
+
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card{
+    border: 2px solid black;
+    width: 400px;
+    border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+
+    /* object-fit: cover; */
+}
+/* .card h3,p{
+    padding: 5px;
+   
+} */
+#pets img{
+    /* height: 300px; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+h4{
+    text-align: right;
+      color: #3c787e;
+}
+
+@media(max-width:375px){
+    #pets{
+        flex-wrap: wrap;
+    }
+
+}
