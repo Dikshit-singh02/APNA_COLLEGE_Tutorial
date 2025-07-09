@@ -1,0 +1,33 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: colorgame;
+    
+    /* animation-name: fontAnimation; */
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size :20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+
+@keyframes colorgame{
+    from{
+        background-color: pink;
+         font-size :20px;
+    }
+    to{
+        background-color: greenyellow;
+            font-size: 40px;
+    }
+}
