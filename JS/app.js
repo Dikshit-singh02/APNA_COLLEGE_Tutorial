@@ -43,4 +43,4 @@ console.log(name.replace("ksh","xxx"));
 console.log(name.repeat(2));
 let students=["dsr","aman","nandan"];
 console.log(students);
-
+console.log(students);
