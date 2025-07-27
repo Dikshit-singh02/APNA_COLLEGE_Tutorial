@@ -44,3 +44,7 @@ console.log(name.repeat(2));
 let students=["dsr","aman","nandan"];
 console.log(students);
 console.log(students);
+let info=["shardha",23,23.32]
+console.log(info);
+info[2]="dsr";
+console.log(info);
