@@ -87,7 +87,23 @@
 
 
 
-let fruits=["mango","apple","banana","litchi","orange"];
-for(fruit of fruits){
-    console.log(fruit);
-}
+// let fruits=["mango","apple","banana","litchi","orange"];
+// for(fruit of fruits){
+//     console.log(fruit);
+// }
+
+// object literals
+let student={
+    name:"dsr",
+    age:23,
+    marks:99
+};
+
+
+const post={
+    username:"Dikshit Singh",
+    content:"This is #firstpost",
+    like:"150",
+    repost:10,
+    tags:["@dikshit","@apnacollege"]
+};
