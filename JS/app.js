@@ -93,17 +93,37 @@
 // }
 
 // object literals
-let student={
-    name:"dsr",
-    age:23,
-    marks:99
-};
+// let student={
+//     name:"dsr",
+//     age:23,
+//     marks:99
+// };
 
 
-const post={
-    username:"Dikshit Singh",
-    content:"This is #firstpost",
-    like:"150",
-    repost:10,
-    tags:["@dikshit","@apnacollege"]
-};
+// const post={
+//     username:"Dikshit Singh",
+//     content:"This is #firstpost",
+//     like:"150",
+//     repost:10,
+//     tags:["@dikshit","@apnacollege"]
+// };
+// console.log(post.username,post["like"]);
+
+// const classInfo={
+//     aman:{
+//         grade:"A+",
+//         city:"delhi"
+//     },
+//     dsr:{
+//         grade:"A+",
+//         city:"Saharsa",
+//         scholarship:"100%"
+//     },
+//     prachi:{
+//         grade:"A+",
+//         city:"himachal",
+//         scholarship:"70%",
+//         college:"cu"
+//     }
+// };
+// console.log(classInfo);
