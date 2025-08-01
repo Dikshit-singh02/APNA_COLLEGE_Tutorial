@@ -127,3 +127,53 @@
 //     }
 // };
 // console.log(classInfo);
+
+
+// const student={
+//     name:"dikshit",
+//     age:23,
+//     eng:95,
+//     math:93,
+//     phy:97,
+//     getAvg(){
+//         console.log(this);
+//     let avg=(this.eng+this.math+this.phy)/3;
+//     console.log(`${this.name} got average marks=${avg}`);
+//     }
+// };
+
+
+
+//try and catch
+// console.log("hello");
+// console.log("hello");
+// let a=6;
+// try{
+// console.log(a);
+// }catch(err){
+//     console.log("caught an error .. a is not defined");
+// }
+
+// console.log("hello");
+// console.log("hello");
+// console.log("hello");
+
+//Arrow Function
+// const sum=(a,b)=>{console.log(a+b);};
+// //arrow function implicit retun
+// const func=(a,b)=>(a*b);
+
+
+//set timeout  fxn
+// console.log("hi there");
+// setTimeout(()=>{
+//     console.log("Dikshit Channel")
+// },4000);
+// console.log("Welcome to");
+
+
+//setInterval fxn
+
+// let id=setInterval(()=>{
+//     console.log("hello");
+// },2000);
