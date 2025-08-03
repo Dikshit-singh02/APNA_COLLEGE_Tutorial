@@ -177,3 +177,11 @@
 // let id=setInterval(()=>{
 //     console.log("hello");
 // },2000);
+
+
+// for each
+let arr=[1,2,3,44,5];
+let print=function(el){
+    console.log(el);
+}
+arr.forEach(print);

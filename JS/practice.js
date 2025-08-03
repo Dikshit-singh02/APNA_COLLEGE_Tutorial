@@ -24,12 +24,12 @@
 
 
 
-const arrow=(n)=>(n*n);
+// const arrow=(n)=>(n*n);
 
-let id=setInterval(()=>{
-  console.log("Hello");
-},2000);
+// let id=setInterval(()=>{
+//   console.log("Hello");
+// },2000);
 
-setTimeout(()=>{
-    clearInterval(id);
-},10000);
+// setTimeout(()=>{
+//     clearInterval(id);
+// },10000);
