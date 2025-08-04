@@ -33,3 +33,31 @@
 // setTimeout(()=>{
 //     clearInterval(id);
 // },10000);
+
+// let arr9=[10,20,30,50,901];
+// ans=arr9.every((el)=>(el%10==0));
+// console.log(ans);
+
+function sum(a,b=9){
+    return a+b;
+}
+sum(9);
+let arrrr=[1,3,9,45,-9,6,23,54,-1,3]
+console.log(Math.min(...arrrr));
+const data={
+    email:"hjk@gmail.com",
+    password:"asdf"
+};
+
+const datacpy={...data,id:"123"};
+console.log(datacpy);
+
+function func(...args){
+    // for(let i=0;i<args.length;i++){
+    //     console.log("you gave us",args[i]);
+    // }
+    return args.reduce((add,el)=>add+el);
+}
+let names=["tonu","nanj","ranu"];
+let [winner,runner]=names;
+console.log(winner);

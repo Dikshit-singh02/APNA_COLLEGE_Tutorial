@@ -185,3 +185,12 @@ let print=function(el){
     console.log(el);
 }
 arr.forEach(print);
+let double=arr.map((el)=>{
+    return el*2;
+})
+console.log(double);
+let ans=arr.filter((el)=>{
+    return el%2==0;
+})
+console.log(ans);
+console.log(arr.every((el)=>(el%2==0)));
