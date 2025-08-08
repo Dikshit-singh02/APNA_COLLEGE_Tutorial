@@ -180,17 +180,42 @@
 
 
 // for each
-let arr=[1,2,3,44,5];
-let print=function(el){
-    console.log(el);
-}
-arr.forEach(print);
-let double=arr.map((el)=>{
-    return el*2;
+// let arr=[1,2,3,44,5];
+// let print=function(el){
+//     console.log(el);
+// }
+// arr.forEach(print);
+// let double=arr.map((el)=>{
+//     return el*2;
+// })
+// console.log(double);
+// let ans=arr.filter((el)=>{
+//     return el%2==0;
+// })
+// console.log(ans);
+// console.log(arr.every((el)=>(el%2==0)));
+
+let btn=document.querySelector('button');
+let inp=document.querySelector('input');
+let ul=document.querySelector('ul');
+btn.addEventListener("click",function(){
+    let item=document.createElement("li");
+        item.innerText=inp.value;
+
+        let delBtn=document.createElement('button');
+        delBtn.innerText="Delete";
+        delBtn.classList.add("delete");
+
+    item.appendChild(delBtn)    
+    ul.appendChild(item);
+    inp.value="";
 })
-console.log(double);
-let ans=arr.filter((el)=>{
-    return el%2==0;
+
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName=="BUTTON"){
+        let listItem=event.target.parentElement;
+        alert(listItem.innerText +"Item Deleted");
+        listItem.remove();
+        
+    }
 })
-console.log(ans);
-console.log(arr.every((el)=>(el%2==0)));
