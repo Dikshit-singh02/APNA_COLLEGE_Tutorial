@@ -101,30 +101,82 @@
 // }
 
 
-function getNum() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            let num = Math.floor(Math.random() * 10) + 1;
-            console.log(num);
-            if (num > 3) {
-                reject("Promise rejected because number > 3");
-            } else {
-                resolve(num);
-            }
-        }, 1000);
-    });
-}
+// function getNum() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let num = Math.floor(Math.random() * 10) + 1;
+//             console.log(num);
+//             if (num > 3) {
+//                 reject("Promise rejected because number > 3");
+//             } else {
+//                 resolve(num);
+//             }
+//         }, 1000);
+//     });
+// }
 
-async function demo() {
+// async function demo() {
+//     try {
+//         await getNum();
+//         await getNum();
+//         // await getNum();
+//         // await getNum();
+//         console.log("All numbers generated successfully!");
+//     } catch (err) {
+//         console.log("Error caught:", err);
+//     }
+// }
+
+// demo();
+
+
+// let url="https://catfact.ninja/fact";
+// fetch(url)
+// .then((response)=>{
+// console.log(response);
+// response.json().then((data)=>{
+//     console.log(data);
+// })
+// })
+// .catch((err)=>{
+//     console.log("Error -",err)
+// });
+
+// async function getFacts(){
+//     try{
+//     let res=await fetch(url);
+//     let data=await res.json();
+//     console.log(data.fact);
+//     }catch(e){
+//         console.log("Error -",e)
+//     }
+//      }
+
+//using axios
+
+let btn=document.querySelector("button");
+    btn.addEventListener("click",async()=>{
+       
+        let fact=await getFacts();
+         console.log(fact);
+         let p=document.querySelector("#result");
+         p.innerText= fact;
+    });
+
+let url = "https://catfact.ninja/fact";
+
+async function getFacts() {
     try {
-        await getNum();
-        await getNum();
-        // await getNum();
-        // await getNum();
-        console.log("All numbers generated successfully!");
-    } catch (err) {
-        console.log("Error caught:", err);
+        let res = await axios.get(url);
+        return res.data.fact;
+    } catch (e) {
+     return "No fact found"
     }
 }
 
-demo();
+getFacts();
+
+
+
+
+
