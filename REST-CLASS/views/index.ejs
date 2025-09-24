@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All posts</title>
+    <title>All Posts</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h3>Quora posts</h3>
+    <h3>Quora Posts</h3>
 
-    <%for(post of posts){%>
+    <% for (let post of posts) { %>
         <div class="post">
-            <h3 class="user">@<%=post.username%></h3>
-            <h4 class="content"><%=post.content%></h4>
-        </div>
-        
-        <%}%>
-    
+            <h3 class="user">@<%= post.username %></h3>
+            <h4 class="content"><%= post.content %></h4>
+            <br>
+            <a href="/posts/<%= post.id %>">See in detail</a>
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
 
+            <form method="POST" action="/posts/<%= post.id %>?_method=DELETE" style="display:inline;">
+                <button type="submit">Delete Post</button>
+            </form>
+        </div>
         <br>
-        <br>
-        <a href="http://localhost:8080/posts/new">Create New Posts</a>
+    <% } %>
+
+    <br>
+    <a href="/posts/new">Create New Post</a>
 </body>
 </html>

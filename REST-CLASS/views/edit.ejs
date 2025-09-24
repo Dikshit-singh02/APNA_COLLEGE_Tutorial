@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Post</title>
+</head>
+<body>
+  <h1>Edit Post</h1>
+  <form method="POST" action="/posts/<%= post.id %>?_method=PATCH">
+    <textarea name="content" required><%= post.content %></textarea>
+    <button>Update Post</button>
+  </form>
+  <a href="/posts/<%= post.id %>">Cancel</a>
+</body>
+</html>
