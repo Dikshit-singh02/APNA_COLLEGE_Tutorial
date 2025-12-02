@@ -1,9 +1,11 @@
 import "./Product.css"
-function Product(){
+function Product({title,price}){
+   
     return(
         <div className="Product">
-            <h1>This is a product Tile</h1>
+            <h1>{title}</h1>
             <h3>This is a Product Description.</h3>
+            <h4>Price:{price/2}</h4>
         </div>
     )
 }
