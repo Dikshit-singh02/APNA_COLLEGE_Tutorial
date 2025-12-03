@@ -1,11 +1,16 @@
-import Product from "./Product.jsx"
+import Product from "./Product.jsx";
+
 function ProductTab(){
-    return(
-        <>
-      <Product title="phone" price={20000}/>
-       <Product title="laptop" price={30000}/>
-        <Product title="Pen"price={20}/>
-  </>
-    );
+  let options = ["hi-tech", "durable","fast" ];
+  let options2 = { a: "hi-tech", b: "durable", c: "fast" };
+
+  return (
+    <>
+      <Product title="phone" price={20000} features={options} features2={options2} />
+      <Product title="laptop" price={30000} addfeatures={{a:"best-one"}} />
+      <Product title="Pen" price={20} />
+    </>
+  );
 }
- export default ProductTab;
+
+export default ProductTab;
