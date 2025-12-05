@@ -1,5 +1,5 @@
 import "./Product.css";
-//react prop
+//react props
 function Product({ title, price, features, features2, addfeatures }) {
 
     // const list = features?.map((feature) => <li>{feature}</li>);
