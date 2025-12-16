@@ -1,19 +1,15 @@
 import "./Product.css";
+import Price from "./Price";
 //react props
-function Product({ title, price, features, features2, addfeatures }) {
-
-    // const list = features?.map((feature) => <li>{feature}</li>);
-
+function Product({ title }) {
+ 
+    let oldPrice=["12,495","11,900","1,599","599"];
+    let newPrice=["8,999","9,199","899","278"];
     return (
-        <div className="Product">
-            <h1>{title}</h1>
-            <h3>This is a Product Description.</h3>
-            <h4>Price: {price / 2}</h4>
-
-            <p>{features?.map((feature) => <li>{feature}</li>)}</p>
-
-            <p>{features2?.a}</p>
-            <p>{addfeatures?.a}</p>
+        <div className="Product" >
+            <h4>{title}</h4>
+            <p>Description</p>
+            <Price/>
         </div>
     );
 }
