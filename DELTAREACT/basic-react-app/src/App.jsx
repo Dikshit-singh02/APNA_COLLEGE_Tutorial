@@ -9,7 +9,7 @@ import Ticket from "./Ticket.jsx";
 function App() {
   return(
     <>
-  <Lottery n={3} winningSum={15}/>
+  <Form/>
     </>
     
   ) ;
